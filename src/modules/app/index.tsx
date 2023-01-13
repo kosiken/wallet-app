@@ -81,6 +81,7 @@ export const AppCom = () => {
       console.log(raisedBNB, hardCap, balance)
     }
       catch(err) {
+        console.log(err);
         window.alert('An error has occurred while loading balances');
       }
       setLoadingBalance(false);
@@ -113,6 +114,7 @@ export const AppCom = () => {
     setContributionAmount(parseFloat(amount));
   }
     catch(err) {
+      console.log(err);
       window.alert('An error has occurred while performing transaction');
     }
     setBuying(false);
