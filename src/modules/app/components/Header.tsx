@@ -40,6 +40,7 @@ const Header = () => {
         toggleModal();
     }
     const disconnect = () => {
+        setWalletType(undefined);
         dispatch(disconnectWallet());
     }
     useEffect(() => {

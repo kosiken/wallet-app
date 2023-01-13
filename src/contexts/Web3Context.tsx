@@ -8,7 +8,7 @@ export const Web3Context = React.createContext<{
   contractAddress?: string;
   settingNetwork: boolean;
   walletType?: 'metamask' | 'wallet-connect';
-  setWalletType: (w: 'metamask' | 'wallet-connect') => void
+  setWalletType: (w: 'metamask' | 'wallet-connect' | undefined) => void
 }>({
   setWeb3: () => { },
 
