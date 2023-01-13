@@ -53,7 +53,11 @@ export const AppCom = () => {
     setExxValue(10 * parseFloat(deferred));
   }, [deferred])
 
-
+  useEffect(() =>{
+    if(!walletAddress) {
+      setWalletBalance(0);
+    }
+  }, [walletAddress])
   useEffect(() => {
     const loadBalance = async () => {
       if (!walletAddress) {
